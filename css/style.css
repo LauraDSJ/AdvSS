@@ -1,11 +1,14 @@
+/*Cancels all padding in an element*/
 .no-padding {
     padding:0px;
 }
 
+/*Footer style*/
 .footer {
     background-color: #2d3037;
 }
 
+/*Footer links style*/
 #footer-links a{
     color:#fff;
     text-decoration: none;
@@ -198,12 +201,12 @@ ul.nav a:hover,
 .separation20 { display: block; height: 20px; }
 
 /* ------------ Index miscelaneous styles */
-/*Margin so the Plus sign on Flexible outsoursing gets on top of the first block*/
+/*FIFTH SECTION: Margin so the Plus sign on Flexible outsoursing gets on top of the first block*/
 .outsourcing-top-block {
     margin-top:-15px;
 }
 
-/* Size for the color of the Flexible outsourcing blocks*/
+/* FIFTH SECTION: Size for the color of the Flexible outsourcing blocks*/
 .offsite-color {
     width: 50px;
     height:30px;
@@ -211,7 +214,7 @@ ul.nav a:hover,
     margin: auto;
 }
 
-/* Our approach block when is closed */
+/* SIXTH SECTION: Our approach block when is closed */
 .closed-approach {
     background-color:#c71f26;
     color:#fff;
@@ -224,12 +227,12 @@ ul.nav a:hover,
     padding:15px 15px 50px 15px;
 }
 
-/*Our approach arrow position to the right in the block*/
+/*SIXTH SECTION: Our approach arrow position to the right in the block*/
 .position-right-arrow {
     float:right;
 }
 
-/*Our approach text container*/
+/*SIXTH SECTION: Our approach text container*/
 .our-approach-container {
     background-color:#e4e4e4;
     -webkit-border-radius: 10px/9px 9px 10px 10px;
@@ -238,7 +241,7 @@ ul.nav a:hover,
     padding:10px;
 }
 
-/*Engagement model: */
+/*SEVENTH SECTION: Engagement model map button style */
 .engagement-model-btn {
     display:block;
     border: solid 1px #fff;
@@ -264,12 +267,13 @@ ul.nav a:hover,
     text-decoration: none;
 }
 
-/*Colors for the shores*/
+/*SEVENTH SECTION: Colors for the outsourcing*/
 .onshore-bg { background-color:#e74b3b }
 .nearshore-bg { background-color:#0fc8ce }
 .offshore-bg { background-color:#f0c40d }
 .vc-bg { background-color:#fff }
 
+/*SEVENTH SECTION: Outsourcing button style*/
 .outsourcing-btn {
     color:#000;
     font-family: 'Open Sans', sans-serif;
@@ -290,14 +294,13 @@ ul.nav a:hover,
     padding-bottom:50px;
 }
 
+/*SEVENTH SECTION: Outsourcing text container inside the col-lg-12 (To give the general padding)*/
 .outsource-content {
     padding: 30px;
 }
 
-.clase-studies-top {
-    width:100%;
-}
-
+/*EIGTH SECTION: CASE STUDIES*/
+/*EIGTH SECTION: This is added in the <row> tag for the elements to be vertical aligned*/
 .case-studies-container {
     /*position for children*/
     display: -webkit-box;
@@ -308,11 +311,12 @@ ul.nav a:hover,
     
     flex-wrap: wrap;
 }
-    
+/*EIGTH SECTION: This is added in the <col> tag for the elements inside to be vertical aligned*/    
 .case-studies-title{
     align-self: center;
 }
 
+/*EIGTH SECTION: Style for the "Project" and "Result" Buttons*/ 
 .case-studies-extra-info {
     color:#0cbcc3 !important;
     text-decoration: none !important;
@@ -336,7 +340,7 @@ ul.nav a:hover,
     background-position: center right;
     padding-right:30px;
 }
-
+/*EIGTH SECTION: CSS triangle for the teal section of case studies extra info*/ 
 .triangle {
     width: 0;
     height: 0;
@@ -347,6 +351,7 @@ ul.nav a:hover,
     margin: auto;
 }
 
+/*EIGTH SECTION: CSS of case studies extra info so it gets on top of the black-background container*/ 
 .extra-info-container {
     margin-top:-25px;
 }
