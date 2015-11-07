@@ -9,43 +9,195 @@ function deviceHeight() {
     $(".fill").css("height", devHeight);
 }
 
+//Display maps, America displays by default
+function displayMaps() {
+    "use strict";
+    
+    //Hide Europe and Asia map
+    $("#europe-map").hide();
+    $("#asia-map").hide();
+    
+    //Click America 
+    $("#america-map-btn").click(function () {
+        
+        if ($("#america-map").is(":visible")) {
+            
+        } else {
+            //Remove the class for the selected state to Europe and(or) Asia button(s) and give it unselected state  
+            $("#europe-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+            $("#asia-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+
+            //give America button the selected state
+            $("#america-map-btn").removeClass("engagement-model-btn").addClass("engagement-model-btn-selected");
+
+            //Hide Europe and Asia maps and display America
+            $("#europe-map").hide();
+            $("#asia-map").hide();
+            $("#america-map").fadeIn("slow");
+        }
+    });
+    
+    //Click Europe
+    $("#europe-map-btn").click(function () {
+        
+        if ($("#europe-map").is(":visible")) {
+            
+        } else {
+            //Remove the class for the selected state to America and(or) Asia button(s) and give it unselected state  
+            $("#america-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+            $("#asia-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+
+            //give Europe button the selected state
+            $("#europe-map-btn").removeClass("engagement-model-btn").addClass("engagement-model-btn-selected");
+
+            //Hide America and Asia maps and display Europe
+            $("#america-map").hide();
+            $("#asia-map").hide();
+            $("#europe-map").fadeIn("slow");
+        }
+    });
+    
+    //Click Asia
+    $("#asia-map-btn").click(function () {
+        
+        if ($("#asia-map").is(":visible")) {
+            
+        } else {
+            //Remove the class for the selected state to America and(or) Europe button(s) and give it unselected state  
+            $("#america-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+            $("#europe-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
+
+            //give Asia button the selected state
+            $("#asia-map-btn").removeClass("engagement-model-btn").addClass("engagement-model-btn-selected");
+
+            //Hide America and Europe maps and display Asia
+            $("#america-map").hide();
+            $("#europe-map").hide();
+            $("#asia-map").fadeIn("slow");
+        }
+    });
+}
+
+//Display description of the Outsourcings, Onshore displays by default 
 function engagementModelsDescriptions() {
     "use strict";
     
+    //Hide the Nearshore, Offshore and Virtual Active information by default
     $("#nearshore-text").hide();
     $("#offshore-text").hide();
     $("#vc-text").hide();
     
+    //Behavior of Onshore button
     $("#onshore-btn").click(function () {
+        //If any of the other outsources is being displayed
         if ($("#nearshore-text").is(":visible") || $("#offshore-text").is(":visible") || $("#vc-text").is(":visible")) {
-            //$("#nearshore-text").slideToggle("slow");
-        }else{
+            //Hide the other sections
+            $("#nearshore-text").hide();
+            $("#offshore-text").hide();
+            $("#vc-text").hide();
+            
+            //Remove the selected class from the ther section's button
+            $("#nearshore-btn").removeClass("out-selected");
+            $("#offshore-btn").removeClass("out-selected");
+            $("#vc-btn").removeClass("out-selected");
+            
+            //Open the Selection
+            $("#onshore-text").slideToggle("slow");
+            $("#onshore-btn").addClass("out-selected");
+        } else {
             $("#onshore-text").slideToggle("slow", function () {
-                if($("#onshore-text").is(":visible")){
+                if ($("#onshore-text").is(":visible")) {
                     $("#onshore-btn").addClass("out-selected");
-                }else{
+                } else {
                     $("#onshore-btn").removeClass("out-selected");
                 }
             });
         }
     });//Onshore button
     
+    //Behavior of Nearshore button
     $("#nearshore-btn").click(function () {
+        //If any of the other outsources is being displayed
         if ($("#onshore-text").is(":visible") || $("#offshore-text").is(":visible") || $("#vc-text").is(":visible")) {
-           // $("#onshore-text").slideToggle("slow", function () {
-        //        $("#nearshore-text").slideToggle("slow");
-        //    }
-         //   });
-        }else{
+           //Hide the other sections
+            $("#onshore-text").hide();
+            $("#offshore-text").hide();
+            $("#vc-text").hide();
+            
+            //Remove the selected class from the ther section's button
+            $("#onshore-btn").removeClass("out-selected");
+            $("#offshore-btn").removeClass("out-selected");
+            $("#vc-btn").removeClass("out-selected");
+            
+            //Open the Selection
+            $("#nearshore-text").slideToggle("slow");
+            $("#nearshore-btn").addClass("out-selected");
+        } else {
             $("#nearshore-text").slideToggle("slow", function () {
-                if($("#nearshore-text").is(":visible")){
+                if ($("#nearshore-text").is(":visible")) {
                     $("#nearshore-btn").addClass("out-selected");
-                }else{
+                } else {
                     $("#nearshore-btn").removeClass("out-selected");
                 }
             });
         }
-    });//Onshore button
+    });//Nearshore button
+    
+    //Behavior of Offshore button
+    $("#offshore-btn").click(function () {
+        //If any of the other outsources is being displayed
+        if ($("#onshore-text").is(":visible") || $("#nearshore-text").is(":visible") || $("#vc-text").is(":visible")) {
+           //Hide the other sections
+            $("#onshore-text").hide();
+            $("#nearshore-text").hide();
+            $("#vc-text").hide();
+            
+            //Remove the selected class from the ther section's button
+            $("#onshore-btn").removeClass("out-selected");
+            $("#nearshore-btn").removeClass("out-selected");
+            $("#vc-btn").removeClass("out-selected");
+            
+            //Open the Selection
+            $("#offshore-text").slideToggle("slow");
+            $("#offshore-btn").addClass("out-selected");
+        } else {
+            $("#offshore-text").slideToggle("slow", function () {
+                if ($("#offshore-text").is(":visible")) {
+                    $("#offshore-btn").addClass("out-selected");
+                } else {
+                    $("#offshore-btn").removeClass("out-selected");
+                }
+            });
+        }
+    });//Offshore button
+    
+    //Behavior of Virtual Captive button
+    $("#vc-btn").click(function () {
+        //If any of the other outsources is being displayed
+        if ($("#onshore-text").is(":visible") || $("#nearshore-text").is(":visible") || $("#offshore-text").is(":visible")) {
+           //Hide the other sections
+            $("#nearshore-text").hide();
+            $("#offshore-text").hide();
+            $("#onshore-text").hide();
+            
+            //Remove the selected class from the ther section's button
+            $("#nearshore-btn").removeClass("out-selected");
+            $("#offshore-btn").removeClass("out-selected");
+            $("#onshore-btn").removeClass("out-selected");
+            
+            //Open the Selection
+            $("#vc-text").slideToggle("slow");
+            $("#vc-btn").addClass("out-selected");
+        } else {
+            $("#vc-text").slideToggle("slow", function () {
+                if ($("#vc-text").is(":visible")) {
+                    $("#vc-btn").addClass("out-selected");
+                } else {
+                    $("#vc-btn").removeClass("out-selected");
+                }
+            });
+        }
+    });//Virtual Captive button
 }
 
 //Functionality of Case Studies extra information buttons
@@ -243,6 +395,7 @@ $(document).ready(function () {
     deviceHeight();
     caseStudiesExtraInfo();
     engagementModelsDescriptions();
+    displayMaps();
 });
 
 $(window).resize(function () {

@@ -258,14 +258,17 @@ ul.nav a:hover,
 .engagement-model-btn-selected {
     display:block;
     border: solid 1px #000;
-    color:#fff;
+    color:#fff !important;
     background-color: #000;
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
     padding-top:10px;
     padding-bottom:10px;
-    text-decoration: none;
+    text-decoration: none !important;
 }
+
+/*SEVENTH SECTION: Maps width*/
+.map-graphic { width:100% }
 
 /*SEVENTH SECTION: Colors for the outsourcing*/
 .onshore-bg { background-color:#e74b3b }
