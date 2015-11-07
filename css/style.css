@@ -1,0 +1,352 @@
+.no-padding {
+    padding:0px;
+}
+
+.footer {
+    background-color: #2d3037;
+}
+
+#footer-links a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#footer-links a:hover{
+    color:#fff;
+    text-decoration: underline;
+}
+
+/* ---------- TEXT STYLES*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body { padding-top: 50px; }
+
+html,body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:#000;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+h1 { font-size: 4.000em; } /*75px on web, tested*/
+h2 { font-size: 2.938em; } /*47px on web, tested*/
+h3 { font-size: 2.500em; } /*40px on web, tested*/
+h4 { font-size: 2.125em; } /*34px on web, tested*/
+h5 { font-size: 1.625em; } /*26px on web, tested*/
+h6 { font-size: 1.250em; } /*20px on web, tested*/
+p  { font-size: 0.938em; }
+
+
+.text-white {
+    color: #fff;
+}
+
+.text-yellow {
+    color:#f1c40d;
+}
+
+.text-red {
+    color:#c71f26;
+}
+
+.text-serif {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* ---------- NAVIGATION STYLES */
+
+/* <nav> style*/
+.advancio-navbar {
+    background-color: #000;
+}
+
+/* style of logo */
+#nav-brand {
+    width:100px;
+}
+
+ul.nav a:link,
+ul.nav a:visited
+ul.nav a:active,
+.navbar-toggle {
+    -webkit-border-radius: 10px/12px;
+	-moz-border-radius: 10px/12px;
+	border-radius: 10px/12px;
+    border: solid 2px #fff !important;
+    padding:10px;
+    margin: 5px;
+    color: #fff !important;
+}
+
+ul.nav a:hover,
+.menu-selected {
+    color:#000 !important;
+    background-color: #fff !important;
+}
+
+/* ------------- Gradient background-colors*/
+.red-gradient-1 {
+    background-color: #c71f26;
+	background-image: -webkit-linear-gradient(bottom, rgba(254,166,52,.29), rgba(150,28,31,0));
+	background-image: -moz-linear-gradient(bottom, rgba(254,166,52,.29), rgba(150,28,31,0));
+	background-image: -o-linear-gradient(bottom, rgba(254,166,52,.29), rgba(150,28,31,0));
+	background-image: -ms-linear-gradient(bottom, rgba(254,166,52,.29), rgba(150,28,31,0));
+	background-image: linear-gradient(to top, rgba(254,166,52,.29), rgba(150,28,31,0));
+}
+
+.light-orange-gradient {
+    background-color: #f4b03a;
+	background-image: -webkit-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
+	background-image: -moz-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
+	background-image: -o-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
+	background-image: -ms-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
+	background-image: linear-gradient(to top, #f4ca3a, rgba(244,176,58,0));
+}
+
+.dark-orange-to-red-gradient {
+    background-color: #fff;
+	background-image: -webkit-linear-gradient(top, #f4511e, #b71c1c);
+	background-image: -moz-linear-gradient(top, #f4511e, #b71c1c);
+	background-image: -o-linear-gradient(top, #f4511e, #b71c1c);
+	background-image: -ms-linear-gradient(top, #f4511e, #b71c1c);
+	background-image: linear-gradient(to bottom, #f4511e, #b71c1c);
+}
+
+/* ------------- Solid Background-colors */
+.background-red {
+    background-color:#c71f26;
+}
+
+.background-yellow {
+    background-color:#f1c40d;
+}
+
+.background-black {
+    background-color:#000;
+}
+
+.background-teal {
+    background-color: #0cbcc3;
+}
+
+/* ------------ Img backgrounds (Index) */
+#index-top-bg {
+    background-image: url(img/index-bg.jpg);
+    background-size:cover;
+    background-position: center bottom;
+    
+    /*position for children*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#frustrated-guy {
+    background-image: url(img/frustrated-guy.jpg);
+    background-size:cover;
+    background-position: center top;
+}
+
+#red-bells {
+    background-image: url(img/red-bells.jpg);
+    background-size:cover;
+    background-position: center top;
+}
+
+#light-orange-dots {
+    background-image: url(img/orange-dots.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#approach-background {
+    background-image: url(img/approach-bg.jpg);
+    background-size: cover;
+    background-position: top right;
+    
+    margin-top:-100px;
+}
+
+#users-moving {
+    background-image: url(img/kid-bg.jpg);
+    background-size: cover;
+    background-position:bottom center;
+}
+
+#timeline-img {
+    background-image: url(img/timeline-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+/* ------------ Separations: blocks so we dont use extra margins */
+.separation200 { display: block; height: 200px; }
+.separation100 { display: block; height: 100px; }
+.separation50 { display: block; height: 50px; }
+.separation40 { display: block; height: 40px; }
+.separation30 { display: block; height: 30px; }
+.separation20 { display: block; height: 20px; }
+
+/* ------------ Index miscelaneous styles */
+/*Margin so the Plus sign on Flexible outsoursing gets on top of the first block*/
+.outsourcing-top-block {
+    margin-top:-15px;
+}
+
+/* Size for the color of the Flexible outsourcing blocks*/
+.offsite-color {
+    width: 50px;
+    height:30px;
+    display: block;
+    margin: auto;
+}
+
+/* Our approach block when is closed */
+.closed-approach {
+    background-color:#c71f26;
+    color:#fff;
+    padding:15px 15px 50px 15px;
+}
+
+.opened-approach {
+    background-color:#fff;
+    color:#0fc8ce;
+    padding:15px 15px 50px 15px;
+}
+
+/*Our approach arrow position to the right in the block*/
+.position-right-arrow {
+    float:right;
+}
+
+/*Our approach text container*/
+.our-approach-container {
+    background-color:#e4e4e4;
+    -webkit-border-radius: 10px/9px 9px 10px 10px;
+	-moz-border-radius: 10px/9px 9px 10px 10px;
+	border-radius: 10px/9px 9px 10px 10px;
+    padding:10px;
+}
+
+/*Engagement model: */
+.engagement-model-btn {
+    display:block;
+    border: solid 1px #fff;
+    color:#000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.engagement-model-btn:hover,
+.engagement-model-btn:active,
+.engagement-model-btn:visited,
+.engagement-model-btn-selected {
+    display:block;
+    border: solid 1px #000;
+    color:#fff;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+}
+
+/*Colors for the shores*/
+.onshore-bg { background-color:#e74b3b }
+.nearshore-bg { background-color:#0fc8ce }
+.offshore-bg { background-color:#f0c40d }
+.vc-bg { background-color:#fff }
+
+.outsourcing-btn {
+    color:#000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    display: block;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.outsourcing-btn:hover,
+.outsourcing-btn:active,
+.outsourcing-btn:visited {
+    text-decoration: underline;
+    color:#000;
+}
+
+.out-selected {
+    padding-bottom:50px;
+}
+
+.outsource-content {
+    padding: 30px;
+}
+
+.clase-studies-top {
+    width:100%;
+}
+
+.case-studies-container {
+    /*position for children*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+    
+.case-studies-title{
+    align-self: center;
+}
+
+.case-studies-extra-info {
+    color:#0cbcc3 !important;
+    text-decoration: none !important;
+    background-image: url(img/plus-unselected.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right:30px;
+}
+
+
+.case-studies-extra-info:hover,
+.case-studies-extra-info:visited,
+.case-studies-extra-info:active,
+.case-studies-extra-info-selected {
+    color:#0cbcc3 !important;
+    text-decoration: none !important;
+    background-image: url(img/plus-selected.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right:30px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #0cbcc3 transparent;
+    display: block;
+    margin: auto;
+}
+
+.extra-info-container {
+    margin-top:-25px;
+}
