@@ -32,10 +32,10 @@ function engagementModelsDescriptions() {
     
     $("#nearshore-btn").click(function () {
         if ($("#onshore-text").is(":visible") || $("#offshore-text").is(":visible") || $("#vc-text").is(":visible")) {
-            $("#onshore-text").slideToggle("slow", function () {
-                $("#nearshore-text").slideToggle("slow");
-            }
             });
+           // $("#onshore-text").slideToggle("slow", function () {
+        //        $("#nearshore-text").slideToggle("slow");
+        //    }
         }else{
             $("#nearshore-text").slideToggle("slow", function () {
                 if($("#nearshore-text").is(":visible")){
