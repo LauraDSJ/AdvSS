@@ -469,3 +469,30 @@ textarea {
     align-items: center;
     justify-content: center;
 }
+
+#services-bg {
+    background-image: url(img/capabilities/services-bck.jpg);
+    background-size:cover;
+    background-position: center top;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#services-photo {
+    background-image: url(img/capabilities/services-photo.jpg);
+    background-size:cover;
+    background-position: center top;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.services-bg-grad {
+    background-image: url(img/capabilities/services-grad.png);
+    background-size:cover;
+    background-position: center top;
+    
+    align-items: center;
+    justify-content: center;
+}
