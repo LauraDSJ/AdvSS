@@ -451,3 +451,21 @@ textarea {
 .extra-info-container {
     margin-top:-25px;
 }
+
+
+/*CAPABILITES SECTION Added by Mario*/ 
+#capabilities-top-bg {
+    background-image: url(img/capabilities/capabilities-header.jpg);
+    background-size:cover;
+    background-position: center center;
+    
+    /*position for children*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
