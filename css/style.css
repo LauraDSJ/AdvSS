@@ -189,6 +189,15 @@ textarea {
 	background-image: linear-gradient(to bottom, #e2411d, #c0241c);
 }
 
+.dark-red-to-bright-red-gradient {
+    background-color: #df1939;
+	background-image: -webkit-linear-gradient(top, #961c1f, rgba(150,28,31,0));
+	background-image: -moz-linear-gradient(top, #961c1f, rgba(150,28,31,0));
+	background-image: -o-linear-gradient(top, #961c1f, rgba(150,28,31,0));
+	background-image: -ms-linear-gradient(top, #961c1f, rgba(150,28,31,0));
+	background-image: linear-gradient(to bottom, #961c1f, rgba(150,28,31,0));
+}
+
 /* ------------- Solid Background-colors */
 .background-red {
     background-color:#c71f26;
@@ -253,6 +262,12 @@ textarea {
     background-position: bottom;
 }
 
+#bottom-strawberry-red-dots {
+    background-image: url(img/bottom-good-it-red-dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
 #approach-background {
     background-image: url(img/approach-bg.jpg);
     background-size: cover;
@@ -283,6 +298,23 @@ textarea {
     display: block;
     margin-bottom: -130px;
     height:130px;
+}
+
+/* ------------ Img backgrounds (GoodIT) */
+#good-it-top-bg {
+    background-image: url(img/goodIT-header.jpg);
+    background-size:cover;
+    background-position: center bottom;
+    
+    /*position for children*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
 }
 
 /* ------------ Separations: blocks so we dont use extra margins */
@@ -452,6 +484,7 @@ textarea {
     margin-top:-25px;
 }
 
+<<<<<<< Updated upstream
 
 /*CAPABILITES SECTION Added by Mario*/ 
 #capabilities-top-bg {
@@ -495,4 +528,21 @@ textarea {
     
     align-items: center;
     justify-content: center;
+=======
+/* ------------ Index miscelaneous styles */
+
+
+/* ------------ GoodIT miscelaneous styles */
+#video-container {
+    height:300px;
+    position: relative;
+}
+
+..video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+>>>>>>> Stashed changes
 }

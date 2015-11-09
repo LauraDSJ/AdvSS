@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Advancio Stylesheet-->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/dot-nav.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="advancio-navbar navbar-fixed-top">
+    <nav class="navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -34,18 +35,35 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#happifyIT" class="smoothScroll">Happify. IT</a></li>
-            <li><a href="#">Our capabilities</a></li>
-            <li><a href="#">Our GOOD. IT</a></li>
+            <li><a href="our-capabilites.html">Our capabilities</a></li>
+            <li><a href="good-it.html">Our GOOD. IT</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/contact.png" alt="contact happify face" height="30"></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="contact-btn"><img src="img/contact.png" alt="contact happify face" height="30"></a> 
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li>contact us</li>
+                <div class="separation20"></div>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>  
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                  
+                <div class="separation20"></div>  
+                  
+                <li>
+                    <a href="https://www.facebook.com/AdvancioInc" class="social-media" target="_blank">b</a>
+                    <a href="https://twitter.com/advancioinc" class="social-media" target="_blank">a</a>
+                    <a href="https://www.youtube.com/channel/UCHSY8JM9vH00kmWCEhgdObA" class="social-media" target="_blank">r</a>
+                    <a href="https://plus.google.com/+Advancioinc/about" class="social-media" target="_blank">c</a>
+                    <a href="https://www.pinterest.com/advancio/pins/" class="social-media" target="_blank">d</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -54,7 +72,7 @@
     </nav>
 
     <!-- FIRST SECTION: SUNSET IMG AND WELCOME-->
-    <div class="container-fluid fill" id="index-top-bg">
+    <div class="container-fluid fill" id="good-it-top-bg">
       <div class="row">
         <div class="col-lg-12 text-center">
           <img alt="Advancio Happify Face" src="img/happify.png" width="170">
@@ -64,36 +82,36 @@
     </div><!--container-fluid-->
 
     <!--SECOND SECTION: Our Capabilities TEXT-->
-    <div class="container-fluid">
-      <div class="row">
-        
-        <div class="separation50"></div> 
-          
-        <div class="col-lg-12" >
+    <div class="container-fluid dark-red-to-bright-red-gradient page block1" data-hint-text="Our GOOD. IT">
+      <div class="row"> 
+         
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+            
+            <div class="separation50"></div>
+            
+            <h1 class="text-white">Our GOOD. <span class="text-yellow">IT</span></h1>
+            
+            <div class="separation30"></div> 
+            
             <p>Our core GOOD value gives us a strong sense of stewardship to the communities surrounding all of our production hubs. We see an enormous opportunity to foster the potential and talent of the youth around us by opening the door to a future they otherwise could not imagine.</p>
+            
+            <div class="separation50"></div> 
         </div><!--col-lg-12-->
-          
-        <div class="separation50"></div> 
         
       </div><!--row-->
     </div><!--container-fluid-->
       
+    <div class="bottom-dots" id="bottom-strawberry-red-dots"></div>   
       
-      <!--THIRD SECTION: DOTS DOTS AND MORE DOTS-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <!--Here goes the dots-->
-        </div><!--col-lg-12-->
-      </div><!--row-->
-    </div><!--container-fluid-->
+      <!--THIRD SECTION: WCC TEXT-->
+    <div class="container-fluid page block2" data-hint-text="{WCC}">
       
-    <!--FOURTH SECTION: WCC TEXT-->
-    <div class="container-fluid">
-      <div class="row">
-          
-        <div class="col-lg-12" >
-            <h1>{WeCanCode} WCC Hack</h1>
+      <div class="separation100"></div>  
+      <div class="separation30"></div>  
+        
+      <div class="row">  
+        <div class="col-xs-10 col-xs-offset-1 text-center" >
+            <h2>{WeCanCode} WCC Hack</h2>
             <div class="separation50"></div> 
             <p>We have deployed the global platform WeCanCode to organize and run free hackathon events in Morocco, Ensenada Mexico, Casablanca, and Tijuana; we are teaching newcomers to crack code.</p>
         </div><!--col-lg-12-->
@@ -108,69 +126,72 @@
       <!-- OUR SERVICES TEXT-->
       <div class="row">
           
-        <div class="col-lg-12" >
-          <!--HERE GOES THE IMAGE-->
+        <div class="col-lg-12 no-padding" >
+          <img src="img/good/wcc-bck.jpg" alt="We Can Code Hackathon" class="full-width">
         </div><!--col-lg-12-->
           
       </div><!--row-->
-
+    </div><!--container-fluid-->
         
         
     <!--FIFTH SECTION: WCC TEXT2-->   
     <div class="container-fluid">
       <div class="row">
           
-        <div class="col-lg-12" >
-            <div class="separation50"></div> 
+        <div class="col-xs-10 col-xs-offset-1 text-center" >
             <p>Our WCC hackathon events offer contests on a theme - areas of focus have included government, education, water conservation, and sponsored challenges. Hackers will also have the option to take on their own projects and use their imagination to develop a project with no restrictions. The hackathons culminate with our participants presenting their solutions to a range of invited guests who then vote on the best solution to a problem - there are winners!</p>
+            
+            <div class="separation50"></div>
         </div><!--col-lg-12-->
-          
-        <div class="separation100"></div> 
         
       </div><!--row-->
     </div><!--container-fluid-->    
         
     <!--SIXTH SECTION: WCC VIDEO-->   
     <div class="container-fluid">
-      <div class="row">
+      <div class="row no-padding">
         
-        <div class="col-lg-12" >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LHGFfNcYt-8" frameborder="0" allowfullscreen></iframe>
+        <div class="col-lg-12 no-padding" id="video-container">
+            <iframe class="video" src="https://www.youtube.com/embed/LHGFfNcYt-8" frameborder="0" allowfullscreen style="width:100%;height:100%;"></iframe>
         </div><!--col-lg-12-->
       </div><!--row-->
     </div><!--container-fluid-->  
         
         
     <!--SEVENTH SECTION: ADV AC TEXT1-->   
-    <div class="container-fluid">
+    <div class="container-fluid dark-red-to-bright-red-gradient page block3"  data-hint-text="Advancio Academy">
       <div class="row">
         
-        <div class="col-lg-12" >
-            <h1>Hunger to Learn: Advancio Answers the Call</h1>
+        <div class="col-xs-10 col-xs-offset-1 text-center" >
+            
             <div class="separation50"></div> 
-            <p>Observing the intense desire to learn in our Hackathons participants opened our eyes to a need that we were called to answer. It was obvious we needed to teach in a more structured way and so the Advancio Academy was born.</p>
+            
+            <h1 class="text-white">Hunger to Learn: <br>Advancio Answers the Call</h1>
+            
+            <div class="separation50"></div> 
+            
+            <p class="text-white">Observing the intense desire to learn in our Hackathons participants opened our eyes to a need that we were called to answer. It was obvious we needed to teach in a more structured way and so the Advancio Academy was born.</p>
         </div><!--col-lg-12-->
       </div><!--row-->
-    </div><!--container-fluid-->  
     
-    <!--EIGHTH SECTION: ADV AC TEXT1-->  
-    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12" >
-            <!--HERE GOES THE IMAGE-->
+        <div class="col-lg-12 no-padding">
+            <img src="img/good/adv-acd.png" alt="Advancio Academy" class="full-width">
         </div><!--col-lg-12-->
-      </div><!--row-->
-    </div><!--container-fluid-->  
+      </div><!--row-->  
 
-    <!--NINTH SECTION: ADV AC TEXT2-->  
-    <div class="container-fluid">
       <div class="row">
         
-        <div class="col-lg-12" >
-            <h2>Free Saturday Classes From coding to API management, we offer free classes in our hub communities. </h2>
-            <div class="separation50"></div> 
-            <p>“The classes ignite curiosity and inspire our students to build great things that can one day change the way we live, to become the authors of their own futures through connection, technology, and exchange." </p>
-            <p>Josie Lopez, COO, Advancio</p>
+        <div class="col-xs-10 col-xs-offset-1">
+            <h4 class="text-white text-center">Free Saturday Classes From coding to API management, we offer free classes in our hub communities. </h4>
+            
+            <div class="separation50"></div>
+            
+            <p class="text-white text-center">“The classes ignite curiosity and inspire our students to build great things that can one day change the way we live, to become the authors of their own futures through connection, technology, and exchange." </p>
+            <p class="text-white text-right">Josie Lopez, COO, Advancio</p>
+            
+            <div class="separation50"></div>
+            
         </div><!--col-lg-12-->
       </div><!--row-->
     </div><!--container-fluid-->  
@@ -184,18 +205,22 @@
       <div class="row">
         <div class="col-sm-4 text-center">
           <a href="#a"><img src="img/advancio-academy.png" alt="Advancio Academy logo"></a>
+            
+          <div class="separation30"></div>    
         </div><!--col-sm-3-->
           
         <div class="col-sm-4 text-center">
           <a href="#a"><img src="img/logo.png" alt="Advancio logo"></a>
+            
+          <div class="separation30"></div>
         </div><!--col-sm-3-->
           
         <div class="col-sm-4 text-center">
           <a href="#a"><img src="img/wcc.png" alt="We Can Code Community logo"></a>
+            
+          <div class="separation30"></div>    
         </div><!--col-sm-3-->
       </div><!--row-->
-        
-      <div class="separation30"></div>
         
       <div class="row" id="footer-links">
         <div class="col-sm-3 text-center">
@@ -221,6 +246,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <script src="js/neo.pager.min.js"></script>
     <script src="js/adv.js"></script>
   </body>
 </html>
