@@ -145,7 +145,7 @@ textarea {
     font-family: 'socicon';
     color:#c71f26 !important;
     display: inline-block !important;
-    padding:0px !important;
+    padding:10px !important;
     margin:5px !important;
 }
 
@@ -153,8 +153,12 @@ textarea {
     font-family: 'socicon';
     color:#000 !important;
     display: inline-block !important;
-    padding:0px !important;
+    padding:10px !important;
     margin:5px !important;
+}
+
+.dropdown-menu {
+    width: 300px !important;
 }
 
 /* ------------- Gradient background-colors*/
