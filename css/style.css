@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('fonts/socicon.eot');
+    src: url('fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socicon.woff') format('woff'),
+         url('fonts/socicon.woff2') format('woff2'),
+         url('fonts/socicon.ttf') format('truetype'),
+         url('fonts/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
 /*Cancels all padding in an element*/
 .no-padding {
     padding:0px;
@@ -19,11 +32,16 @@
     text-decoration: underline;
 }
 
+/*Full width*/
+.full-width {
+    width:100%;
+}
+
 /* ---------- TEXT STYLES*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
-body { padding-top: 50px; }
+/*body { padding-top: 64px; }*/
 
 html,body {
     font-size: 16px;
@@ -61,35 +79,81 @@ p  { font-size: 0.938em; }
     font-family: 'Roboto Slab', serif;
 }
 
+.black-outline {
+    /*-webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;*/
+    text-shadow:
+   -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+     2px 2px 0 #000;
+}
+
 /* ---------- NAVIGATION STYLES */
 
 /* <nav> style*/
-.advancio-navbar {
+.navbar-background {
     background-color: #000;
 }
 
-/* style of logo */
-#nav-brand {
-    width:100px;
-}
-
-ul.nav a:link,
-ul.nav a:visited
+ul.nav a,
+ul.nav a:visited,
 ul.nav a:active,
 .navbar-toggle {
     -webkit-border-radius: 10px/12px;
 	-moz-border-radius: 10px/12px;
 	border-radius: 10px/12px;
-    border: solid 2px #fff !important;
+    border: solid 2px #fff;
+    padding:14px;
+    margin: 5px;
+    color: #fff;
+    font-size:1.250em;
+}
+
+#contact-btn {
+    -webkit-border-radius: 10px/12px;
+	-moz-border-radius: 10px/12px;
+	border-radius: 10px/12px;
+    border: solid 2px #fff;
     padding:10px;
     margin: 5px;
-    color: #fff !important;
+    color: #fff;
 }
 
 ul.nav a:hover,
+#contact-btn:hover,
 .menu-selected {
+    color:#000;
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    color:#000;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+    margin: 10px;
+    padding:10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.social-media{
+    font-family: 'socicon';
+    color:#c71f26 !important;
+    display: inline-block !important;
+    padding:0px !important;
+    margin:5px !important;
+}
+
+.social-media:hover{
+    font-family: 'socicon';
     color:#000 !important;
-    background-color: #fff !important;
+    display: inline-block !important;
+    padding:0px !important;
+    margin:5px !important;
 }
 
 /* ------------- Gradient background-colors*/
@@ -103,7 +167,7 @@ ul.nav a:hover,
 }
 
 .light-orange-gradient {
-    background-color: #f4b03a;
+    background-color: #edb552;
 	background-image: -webkit-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
 	background-image: -moz-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
 	background-image: -o-linear-gradient(bottom, #f4ca3a, rgba(244,176,58,0));
@@ -113,11 +177,11 @@ ul.nav a:hover,
 
 .dark-orange-to-red-gradient {
     background-color: #fff;
-	background-image: -webkit-linear-gradient(top, #f4511e, #b71c1c);
-	background-image: -moz-linear-gradient(top, #f4511e, #b71c1c);
-	background-image: -o-linear-gradient(top, #f4511e, #b71c1c);
-	background-image: -ms-linear-gradient(top, #f4511e, #b71c1c);
-	background-image: linear-gradient(to bottom, #f4511e, #b71c1c);
+	background-image: -webkit-linear-gradient(top, #e2411d, #c0241c);
+	background-image: -moz-linear-gradient(top, #e2411d, #c0241c);
+	background-image: -o-linear-gradient(top, #e2411d, #c0241c);
+	background-image: -ms-linear-gradient(top, #e2411d, #c0241c);
+	background-image: linear-gradient(to bottom, #e2411d, #c0241c);
 }
 
 /* ------------- Solid Background-colors */
@@ -167,7 +231,19 @@ ul.nav a:hover,
 }
 
 #light-orange-dots {
-    background-image: url(img/orange-dots.jpg);
+    background-image: url(img/orange-dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#dark-orange-dots {
+    background-image: url(img/dark-orange-dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#bottom-red-dots {
+    background-image: url(img/bottom-red-dots.png);
     background-repeat: repeat-x;
     background-position: bottom;
 }
@@ -190,6 +266,18 @@ ul.nav a:hover,
     background-image: url(img/timeline-bg.jpg);
     background-size: cover;
     background-position: top center;
+}
+
+.top-dots {
+    display: block;
+    margin-top: -130px;
+    height:130px;
+}
+
+.bottom-dots {
+    display: block;
+    margin-bottom: -130px;
+    height:130px;
 }
 
 /* ------------ Separations: blocks so we dont use extra margins */
@@ -304,7 +392,7 @@ ul.nav a:hover,
 
 /*EIGTH SECTION: CASE STUDIES*/
 /*EIGTH SECTION: This is added in the <row> tag for the elements to be vertical aligned*/
-.case-studies-container {
+.flex-container {
     /*position for children*/
     display: -webkit-box;
     display: -moz-box;
@@ -315,7 +403,7 @@ ul.nav a:hover,
     flex-wrap: wrap;
 }
 /*EIGTH SECTION: This is added in the <col> tag for the elements inside to be vertical aligned*/    
-.case-studies-title{
+.flex-center-element{
     align-self: center;
 }
 

@@ -1,6 +1,57 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
+//carousel
+$('#myCarousel').carousel({
+    interval: 5000
+});
 
+$('#slide-button-0').on('click', function () {
+    "use strict";
+    
+    $('#myCarousel').carousel(0);
+    
+    $(this).removeClass("closed-approach").addClass("opened-approach");
+    
+    $("#slide-button-1").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-2").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-3").removeClass("opened-approach").addClass("closed-approach");
+});
+
+$('#slide-button-1').on('click', function () {
+    "use strict";
+    
+    $('#myCarousel').carousel(1);
+    
+    $(this).removeClass("closed-approach").addClass("opened-approach");
+    
+    $("#slide-button-0").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-2").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-3").removeClass("opened-approach").addClass("closed-approach");
+});
+
+$('#slide-button-2').on('click', function () {
+    "use strict";
+    
+    $('#myCarousel').carousel(2);
+    
+    $(this).removeClass("closed-approach").addClass("opened-approach");
+    
+    $("#slide-button-0").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-1").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-3").removeClass("opened-approach").addClass("closed-approach");
+});
+
+$('#slide-button-3').on('click', function () {
+    "use strict";
+    
+    $('#myCarousel').carousel(3);
+    
+    $(this).removeClass("closed-approach").addClass("opened-approach");
+    
+    $("#slide-button-0").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-2").removeClass("opened-approach").addClass("closed-approach");
+    $("#slide-button-1").removeClass("opened-approach").addClass("closed-approach");
+});
 //Get the height of the device to give the same height to divs that contain the class "fill"
 function deviceHeight() {
     "use strict";
@@ -8,6 +59,9 @@ function deviceHeight() {
     var devHeight = $(window).height();
     $(".fill").css("height", devHeight);
 }
+
+//Navbar fade in background when scroll
+
 
 //Display maps, America displays by default
 function displayMaps() {
@@ -20,8 +74,7 @@ function displayMaps() {
     //Click America 
     $("#america-map-btn").click(function () {
         
-        if ($("#america-map").is(":visible")) {
-            
+        if ($("#america-map").is(":visible")) {   
         } else {
             //Remove the class for the selected state to Europe and(or) Asia button(s) and give it unselected state  
             $("#europe-map-btn").removeClass("engagement-model-btn-selected").addClass("engagement-model-btn");
@@ -388,6 +441,17 @@ function caseStudiesExtraInfo() {
     });//Top Finance Result Button
     
 }
+
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $(".navbar-fixed-top").addClass("navbar-background", function () {
+            $(this).fadeIn();
+        });
+        
+    } else {
+        $(".navbar-fixed-top").removeClass("navbar-background");
+    }
+});
 
 $(document).ready(function () {
     "use strict";

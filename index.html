@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="advancio-navbar navbar-fixed-top">
+    <nav class="navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -37,15 +37,32 @@
             <li><a href="#">Our capabilities</a></li>
             <li><a href="#">Our GOOD. IT</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/contact.png" alt="contact happify face" height="30"></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="contact-btn"><img src="img/contact.png" alt="contact happify face" height="30"></a> 
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li>contact us</li>
+                <div class="separation20"></div>
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>  
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                  
+                <div class="separation20"></div>  
+                  
+                <li>
+                    <a href="https://www.facebook.com/AdvancioInc" class="social-media" target="_blank">b</a>
+                    <a href="https://twitter.com/advancioinc" class="social-media" target="_blank">a</a>
+                    <a href="https://www.youtube.com/channel/UCHSY8JM9vH00kmWCEhgdObA" class="social-media" target="_blank">r</a>
+                    <a href="https://plus.google.com/+Advancioinc/about" class="social-media" target="_blank">c</a>
+                    <a href="https://www.pinterest.com/advancio/pins/" class="social-media" target="_blank">d</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -68,35 +85,64 @@
       <div class="row">
         
         <!--Guy img-->
-        <div class="col-md-3 fill" id="frustrated-guy">
+        <div class="col-md-4 no-padding">
+          <img src="img/frustrated-guy.jpg" alt="Frustrated guy" class="full-width">
         </div><!--col-md-3-->
           
         <!-- text-->
-        <div class="col-md-6 text-center">
+        <div class="col-md-4 text-center">
             
-          <div class="separation50"></div>
+          <div class="separation100 visible-lg"></div>    
+          <div class="separation50 visible-lg"></div>    
+            
+          <div class="separation20"></div>
             
           <p>We’ve heard it from many executives.</p>
             
           <div class="separation30"></div>
             
-          <h3 class="text-serif">“I hate IT and I love IT.<br>
+          <h4 class="text-serif visible-lg">“I hate IT and I love IT.<br>
               I hate runaway<br>
               never-ending IT<br>
               projects, but I love the<br> 
               efficiencies and<br> 
               market growth their<br> 
-              solutions bring.”</h3>
+              solutions bring.”</h4>
+            
+          <h5 class="text-serif visible-md">“I hate IT and I love IT.<br>
+              I hate runaway<br>
+              never-ending IT<br>
+              projects, but I love the<br> 
+              efficiencies and<br> 
+              market growth their<br> 
+              solutions bring.”</h5>
+        
+          <h6 class="text-serif visible-sm">“I hate IT and I love IT.<br>
+              I hate runaway<br>
+              never-ending IT<br>
+              projects, but I love the<br> 
+              efficiencies and<br> 
+              market growth their<br> 
+              solutions bring.”</h6>
+            
+          <p class="text-serif visible-xs">“I hate IT and I love IT.<br>
+              I hate runaway<br>
+              never-ending IT<br>
+              projects, but I love the<br> 
+              efficiencies and<br> 
+              market growth their<br> 
+              solutions bring.”</p>
             
           <div class="separation30"></div>
             
           <h5 class="text-red bold">Ring a bell?</h5>
             
-          <div class="separation50"></div>
+          <div class="separation20"></div>
+              
         </div><!--col-md-6-->
           
-        <div class="col-md-3 fill" id="red-bells">
-          
+        <div class="col-md-4 no-padding">
+          <img src="img/red-bells.jpg" alt="red bells" class="full-width">
         </div><!--col-md-3-->
       </div><!--row-->
     </div><!--container-fluid-->
@@ -123,7 +169,7 @@
     <!-- FORTH SECTION. TITLE OF FIRST PAGE: Happify.IT-->
     <div class="container-fluid" id="happifyIT">
       <div class="row">
-        <div class="col-lg-12 text-center" id="light-orange-dots">
+        <div class="col-lg-12 text-center">
             
           <div class="separation30"></div> 
             
@@ -135,6 +181,9 @@
         </div><!--col-lg-12-->
       </div><!--row-->
     </div><!-- container-fluid-->
+    
+    <!--dots over the img on top-->
+    <div class="top-dots" id="light-orange-dots"></div>      
 
     <!--FIFTH SECTION: FLEXIBLE OUTSOURCING-->
     <div class="container-fluid">
@@ -312,7 +361,7 @@
         
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="text-white">Our Approach</h2>  
+          <h2 class="text-white black-outline">Our Approach</h2>  
         </div>  
       </div><!--row-->
         
@@ -323,11 +372,11 @@
         <div class="col-xs-10 col-xs-offset-1">
           <div class="row">
             <div class="col-sm-3">
-              <div class="opened-approach text-center">
+              <div class="opened-approach text-center" id="slide-button-0">
                 <h6>We start with you
                     needs analysis ... </h6>
                   
-                <img src="img/approach-action-close-arrow.png" alt="action close arrow" class="position-right-arrow">
+                <img src="img/approach-action-open-arrow.png" alt="action close arrow" class="position-right-arrow">
                   
               </div>
                 
@@ -335,7 +384,7 @@
             </div><!--col-sm-3-->
               
             <div class="col-sm-3">
-              <div class="closed-approach text-center">
+              <div class="closed-approach text-center" id="slide-button-1">
                 <h6>... then we apply our
                     unique perspective ...</h6>
                   
@@ -347,7 +396,7 @@
             </div><!--col-sm-3-->
               
             <div class="col-sm-3">
-              <div class="closed-approach text-center">
+              <div class="closed-approach text-center" id="slide-button-2">
                 <h6>... and our
                     technical experience ...</h6>
                   
@@ -359,7 +408,7 @@
             </div><!--col-sm-3-->
               
             <div class="col-sm-3">
-              <div class="closed-approach text-center">
+              <div class="closed-approach text-center" id="slide-button-3">
                 <h6>... to provide the
                     right talent.</h6>
                   
@@ -379,16 +428,34 @@
         <div class="col-xs-10 col-xs-offset-1">
             
           <div class="row our-approach-container">
-            <div class="col-xs-1 text-center">
-              <a href="#"><img src="img/approach-action-left-arrow.png" alt="action move left arrow"></a>  
+            <div class="col-xs-2 text-center">
+              <div class="separation20"></div>
+              <a  href="#myCarousel" data-slide="prev"><img src="img/approach-action-left-arrow.png" alt="action move left arrow"></a>  
             </div><!--col-xs-1-->
               
-            <div class="col-xs-10 text-center">
-              <h6>Before responding to an RFP, a key executive, meets with your IT executives to survey the unique requirements and pain points in your project pipeline.</h6>
+            <div class="col-xs-8 text-center">
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="active item" data-slide-number="0">
+                      <h6>Before responding to an RFP, a key executive, meets with your IT executives to survey the unique requirements and pain points in your project pipeline.</h6>
+                    </div>
+                    <div class="item" data-slide-number="1">
+                      <h6>The typical cultural, communication, and timing challenges of outsourcing are mitigated by the experience of our senior team members and the international fluency of our entire team: French, Spanish, Arabic and Berber.</h6>
+                    </div>
+                    <div class="item" data-slide-number="2">
+                      <h6>Our founders speak the language of IT executives and software architects. We understand how to package staff into the most appropriate configuration to best support in-house teams.</h6>
+                    </div>
+                    <div class="item" data-slide-number="3">
+                      <h6>With the explosion of APPs, PaaS, IaaS and the IoT markets, our founders were compelled to build production hubs on both sides of the world to help you meet the crushing demand. </h6>
+                    </div>
+                  </div><!--/carousel-inner-->
+                </div><!--/carousel-->
             </div><!--col-xs-10-->
               
-            <div class="col-xs-1 text-center">
-              <a href="#"><img src="img/approach-action-right-arrow.png" alt="action move right arrow"></a>  
+            <div class="col-xs-2 text-center">
+              <div class="separation20"></div>
+              <a href="#myCarousel" data-slide="next"><img src="img/approach-action-right-arrow.png" alt="action move right arrow"></a>  
             </div><!--col-xs-1-->
           </div><!--row--> 
         </div><!--col-xs-10-->
@@ -397,6 +464,9 @@
       <div class="separation200"></div>
         
     </div><!--container-fluid-->
+    
+    <!--dots over the img on top-->
+    <div class="top-dots" id="dark-orange-dots"></div> 
 
     <!-- SEVENTH SECTION: Engagement Models-->
     <div class="container-fluid dark-orange-to-red-gradient">
@@ -513,11 +583,15 @@
         
       <div class="separation50"></div>    
         
-    </div><!--container-fluid--> 
+    </div><!--container-fluid-->   
        
-    <div class="container-fluid" id="users-moving">
+    <div class="container-fluid no-padding" id="users-moving">
+        
+      <!--dots over the img on top-->
+      <div class="bottom-dots" id="bottom-red-dots"></div>     
         
       <div class="separation200"></div>
+      <div class="separation100"></div>
         
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -534,44 +608,47 @@
         
       <!--TOP SECTION, IMAGE AND TITLE OF SECTION-->
         
-      <div class="row case-studies-container">
+      <div class="row flex-container">
         <div class="col-sm-6 no-padding">
-          <img src="img/case-studies.jpg" alt="Case studies image" class="img-responsive">
+          <img src="img/case-studies.jpg" alt="Case studies image" class="full-width">
         </div>
-        <div class="col-sm-6 text-center case-studies-title">
+        <div class="col-sm-6 text-center flex-center-element">
           <h1 class="text-red">Case Studies</h1>  
         </div>
       </div><!--row-->
         
       <!-- PEAK MARKETING SECTION-->
-      <div class="row background-black case-studies-container">
+      <div class="row background-black flex-container">
         
         <div class="col-sm-6 no-padding">
-          <img src="img/peak-mkt.jpg" alt="Peak Marketing Image" class="img-responsive">  
+          <img src="img/peak-mkt.jpg" alt="Peak Marketing Image" class="full-width">  
         </div>
           
-        <div class="col-sm-6 text-center case-studies-title">
-            
-          <div class="separation50"></div>
-            
-          <img src="img/peaklogo.png" alt="Peak Marketing Solutions Case">
+        <div class="col-sm-6 text-center flex-center-element">
             
           <div class="separation50"></div>
           
-          <p class="text-white">Peak Performance Marketing Solutions is a premier automotive provider of data-driven marketing solutions across sales and service to 1000s of automotive dealers nationwide. Their products are designed to maximize their client’s customer engagement.</p>
-           
-          <div class="separation100"></div>    
-            
           <div class="row">
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="peak-mkt-project-btn" class="case-studies-extra-info">Project</a>  
-            </div>  
+            <div class="col-xs-10 col-xs-offset-1">
+              <img src="img/peaklogo.png" alt="Peak Marketing Solutions Case">
+            
+              <div class="separation50"></div>
+          
+              <p class="text-white">Peak Performance Marketing Solutions is a premier automotive provider of data-driven marketing solutions across sales and service to 1000s of automotive dealers nationwide. Their products are designed to maximize their client’s customer engagement.</p>
+           
+              <div class="separation100"></div>    
+            
+              <div class="row">
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="peak-mkt-project-btn" class="case-studies-extra-info">Project</a>  
+                </div>  
               
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="peak-mkt-result-btn" class="case-studies-extra-info">Result</a>  
-            </div>  
-          </div>    
-        
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="peak-mkt-result-btn" class="case-studies-extra-info">Result</a>  
+                </div>  
+              </div>    
+            </div><!--row separation for the sides-->
+          </div><!--col xs 10-->
         </div><!--case studies text-->
           
         <div class="separation50"></div>
@@ -628,36 +705,41 @@
       </div><!--Peak Marketing-project-->  
 
       <!-- ALLIANCE UNITED SECTION-->
-      <div class="row background-black case-studies-container">
+      <div class="row background-black flex-container">
           
-        <div class="col-sm-6 text-center case-studies-title">
+        <div class="col-sm-6 text-center flex-center-element">
             
           <div class="separation50"></div>
-            
-          <img src="img/au-logo.png" alt="Alliance United Logo" height="150">
-            
-          <div class="separation50"></div>    
-           
-          <p class="text-white">Alliance United Insurance is a non-standard automotive insurance carrier who distributes exclusively through a network of more than 900 Brokers across nearly 2,000 locations in California. They take pride in their super user-friendly technology as a cornerstone of their business.</p>
-            
-          <div class="separation100"></div>      
-        
+         
           <div class="row">
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="au-project-btn" class="case-studies-extra-info">Project</a>  
-            </div>  
-              
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="au-result-btn" class="case-studies-extra-info">Result</a>  
-            </div>  
-          </div>
+            <div class="col-xs-10 col-xs-offset-1">
             
-          <div class="separation50"></div>    
-            
+              <img src="img/au-logo.png" alt="Alliance United Logo" height="150">
+
+              <div class="separation50"></div>    
+
+              <p class="text-white">Alliance United Insurance is a non-standard automotive insurance carrier who distributes exclusively through a network of more than 900 Brokers across nearly 2,000 locations in California. They take pride in their super user-friendly technology as a cornerstone of their business.</p>
+
+              <div class="separation100"></div>      
+
+              <div class="row">
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="au-project-btn" class="case-studies-extra-info">Project</a>  
+                </div>  
+
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="au-result-btn" class="case-studies-extra-info">Result</a>  
+                </div>  
+              </div>
+
+              <div class="separation50"></div> 
+            </div><!--col xs 10-->
+          </div><!--row text separation-->
+
         </div>
           
         <div class="col-sm-6 no-padding">
-          <img src="img/au-bg.jpg" alt="Alliance United Case" class="img-responsive">
+          <img src="img/au-bg.jpg" alt="Alliance United Case" class="full-width">
         </div>
       </div><!--row black background-->
         
@@ -711,32 +793,37 @@
       </div><!--top-finance-project-->
         
       <!--TOP FINANCE SECTION-->
-      <div class="row background-black case-studies-container">
+      <div class="row background-black flex-container">
         <div class="col-sm-6 no-padding">
-          <img src="img/top-bg.jpg" alt="Top Finance Case" class="img-responsive">
+          <img src="img/top-bg.jpg" alt="Top Finance Case" class="full-width">
         </div>
           
-        <div class="col-sm-6 text-center case-studies-title">
+        <div class="col-sm-6 text-center flex-center-element">
             
-          <div class="separation50"></div>    
+          <div class="separation50"></div>   
             
-          <img src="img/top-logo.png" alt="Top Finance logo" height="130">
-            
-          <div class="separation50"></div>      
-            
-          <p class="text-white">Top Premium Finance provides agent/brokers with a simple, reasonable means to fund their commercial, personal, property & casualty insurance products.</p>
-            
-          <div class="separation100"></div>      
-        
           <div class="row">
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="top-finance-project-btn" class="case-studies-extra-info">Project</a>  
-            </div>  
-              
-            <div class="col-xs-6 text-center">
-              <a href="#a" id="top-finance-result-btn" class="case-studies-extra-info">Result</a>  
-            </div>  
-          </div>
+            <div class="col-xs-10 col-xs-offset-1">    
+            
+              <img src="img/top-logo.png" alt="Top Finance logo" height="130">
+
+              <div class="separation50"></div>      
+
+              <p class="text-white">Top Premium Finance provides agent/brokers with a simple, reasonable means to fund their commercial, personal, property & casualty insurance products.</p>
+
+              <div class="separation100"></div>      
+
+              <div class="row">
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="top-finance-project-btn" class="case-studies-extra-info">Project</a>  
+                </div>  
+
+                <div class="col-xs-6 text-center">
+                  <a href="#a" id="top-finance-result-btn" class="case-studies-extra-info">Result</a>  
+                </div>  
+              </div>
+            </div><!--col-xs-10-->
+          </div><!--row separation text-->
             
           <div class="separation50"></div>
             
@@ -910,9 +997,11 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4"></div>
+        <div class="col-md-4 col-lg-3 no-padding">
+          <img src="img/computer-cat.jpg" alt="Computer cat" class="full-width">  
+        </div>
           
-        <div class="col-sm-4 text-center">
+        <div class="col-md-4 col-lg-6 text-center">
             
           <div class="separation50"></div>    
             
@@ -923,7 +1012,9 @@ We know in the end happy digitial users are key to engagement and loyalty.</h6>
             
         </div><!--col-sm-4 -->
           
-        <div class="col-sm-4"></div>
+        <div class="col-md-4 col-lg-3 no-padding">
+          <img src="img/couch-guy.jpg" alt="Couch guy" class="full-width">
+        </div>
       </div>
     </div><!--container-fluid-->
       
