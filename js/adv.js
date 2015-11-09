@@ -1,10 +1,13 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
-//carousel
+$("body").neo_pager();
+
+//carousel time to move
 $('#myCarousel').carousel({
     interval: 5000
 });
 
+//Click Out Approack first block for first info slide
 $('#slide-button-0').on('click', function () {
     "use strict";
     
