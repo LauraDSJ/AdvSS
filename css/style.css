@@ -503,15 +503,8 @@ textarea {
     justify-content: center;
 }
 
-#services-bg {
-    background-image: url(img/capabilities/services-bck.jpg);
-    background-size:cover;
-    background-position: center top;
-    
-    align-items: center;
-    justify-content: center;
-}
 
+/*Services background Photo*/ 
 #services-photo {
     background-image: url(img/capabilities/services-photo.jpg);
     background-size:cover;
@@ -521,6 +514,7 @@ textarea {
     justify-content: center;
 }
 
+/*Services Background Gradient*/ 
 .services-bg-grad {
     background-image: url(img/capabilities/services-grad.png);
     background-size:cover;
@@ -528,6 +522,64 @@ textarea {
     
     align-items: center;
     justify-content: center;
+}
+
+.white-border{
+    border: 2px solid white;
+}
+
+.white-fill{
+    background-color: white;
+}
+
+.yellow-fill{
+    background-color:#e9a526;
+}
+
+.teal-fill{
+    background-color:#0cabb1;
+}
+
+/*Padding for sides of the text*/ 
+
+.padding-10{
+    padding-left:10%;
+    padding-right:10%;
+}
+.padding-15{
+    padding-left:15%;
+    padding-right:15%;
+}
+.padding-20{
+    padding-left:20%;
+    padding-right:20%;
+}
+
+/*Diligent Background Gradient*/ 
+.diligent-bg {
+    background-image: url(img/capabilities/dilig-bck.jpg);
+    background-size:cover;
+    background-position: center top;
+    
+    align-items: center;
+    justify-content: center;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+}
+
+#teal-dots {
+    background-image: url(img/capabilities/teal-dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+#yellow-dots {
+    background-image: url(img/capabilities/yellow-dots.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+=======
+>>>>>>> Stashed changes
 =======
 /* ------------ Index miscelaneous styles */
 
@@ -544,5 +596,9 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
+>>>>>>> Stashed changes
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/master
 >>>>>>> Stashed changes
 }
