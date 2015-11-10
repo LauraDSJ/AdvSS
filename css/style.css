@@ -37,6 +37,10 @@
     width:100%;
 }
 
+.img-responsive {
+    display: inline-block;
+}
+
 /* ---------- TEXT STYLES*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
@@ -213,6 +217,10 @@ textarea {
 
 .background-teal {
     background-color: #0cbcc3;
+}
+
+.background-white {
+    background-color: #fff;
 }
 
 /* ------------ Img backgrounds (Index) */
@@ -484,11 +492,9 @@ textarea {
     margin-top:-25px;
 }
 
-<<<<<<< Updated upstream
-
 /*CAPABILITES SECTION Added by Mario*/ 
 #capabilities-top-bg {
-    background-image: url(img/capabilities/capabilities-header.jpg);
+    background-image: url(img/our-capabilities-header.jpg);
     background-size:cover;
     background-position: center center;
     
@@ -516,24 +522,43 @@ textarea {
 
 /*Services Background Gradient*/ 
 .services-bg-grad {
-    background-image: url(img/capabilities/services-grad.png);
+    /*background-image: url(img/capabilities/services-grad.png);
     background-size:cover;
     background-position: center top;
     
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+    
+    background-color: rgba(199,31,38,.73);
+	background-image: -webkit-linear-gradient(bottom, rgba(241,196,13,.7), rgba(241,196,13,0));
+	background-image: -moz-linear-gradient(bottom, rgba(241,196,13,.7), rgba(241,196,13,0));
+	background-image: -o-linear-gradient(bottom, rgba(241,196,13,.7), rgba(241,196,13,0));
+	background-image: -ms-linear-gradient(bottom, rgba(241,196,13,.7), rgba(241,196,13,0));
+	background-image: linear-gradient(to top, rgba(241,196,13,.7), rgba(241,196,13,0));
 }
 
-.white-border{
-    border: 2px solid white;
+.services-btn{
+    border: 3px solid white;
+    padding: 5px;
+    display: block;
 }
 
-.white-fill{
-    background-color: white;
+.services-btn:hover,
+.services-btn-selected {
+    border: 3px solid white;
+    padding: 5px;
+    background-color: #fff;
+    display: block;
+}
+
+.services-text {
+    background-color: #fff;
+    color:#c71f26;
+    padding: 20px;
 }
 
 .yellow-fill{
-    background-color:#e9a526;
+    background-color:#E4A022;
 }
 
 .teal-fill{
@@ -563,9 +588,6 @@ textarea {
     
     align-items: center;
     justify-content: center;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 }
 
 #teal-dots {
@@ -578,9 +600,7 @@ textarea {
     background-image: url(img/capabilities/yellow-dots.png);
     background-repeat: repeat-x;
     background-position: bottom;
-=======
->>>>>>> Stashed changes
-=======
+}
 /* ------------ Index miscelaneous styles */
 
 
@@ -596,9 +616,4 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
->>>>>>> Stashed changes
-<<<<<<< Updated upstream
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
 }
