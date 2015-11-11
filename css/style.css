@@ -557,12 +557,34 @@ textarea {
     padding: 20px;
 }
 
+.percentages {
+    margin-top:-120px;
+}
+
 .yellow-fill{
     background-color:#E4A022;
 }
 
 .teal-fill{
     background-color:#0cabb1;
+}
+
+.sunflowers-bg {
+    background-image: url(img/capabilities/sunflowers.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.orage-building-bg {
+    background-image: url(img/capabilities/orange-photo.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.advancio-bg {
+    background-image: url(img/capabilities/advancio-bg.jpg);
+    background-size:cover;
+    background-position: center center;
 }
 
 /*Padding for sides of the text*/ 
