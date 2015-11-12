@@ -279,7 +279,7 @@ textarea {
 #approach-background {
     background-image: url(img/approach-bg.jpg);
     background-size: cover;
-    background-position: top right;
+    background-position: top left;
     
     margin-top:-100px;
 }
@@ -287,7 +287,7 @@ textarea {
 #users-moving {
     background-image: url(img/kid-bg.jpg);
     background-size: cover;
-    background-position:bottom center;
+    background-position:top center;
 }
 
 #timeline-img {
@@ -345,6 +345,13 @@ textarea {
     height:30px;
     display: block;
     margin: auto;
+}
+
+.white-line {
+    height:8px;
+    width:100%;
+    display: block;
+    background-color: #fff;
 }
 
 /* SIXTH SECTION: Our approach block when is closed */
@@ -490,6 +497,7 @@ textarea {
 /*EIGTH SECTION: CSS of case studies extra info so it gets on top of the black-background container*/ 
 .extra-info-container {
     margin-top:-25px;
+    width:100%;
 }
 
 /*CAPABILITES SECTION Added by Mario*/ 

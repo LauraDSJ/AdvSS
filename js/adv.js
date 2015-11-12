@@ -492,6 +492,12 @@ function caseStudiesExtraInfo() {
     
 }
 
+//---------------------- Our Capabilities Section
+$("#des-text").hide();
+$("#qa-text").hide();
+$("#sys-text").hide();
+$("#proj-text").hide();
+
 $(window).scroll(function () {
     if ($(this).scrollTop()) {
         $(".navbar-fixed-top").addClass("navbar-background", function () {
