@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
 @font-face {
     font-family: 'socicon';
     src: url('fonts/socicon.eot');
@@ -42,8 +45,6 @@
 }
 
 /* ---------- TEXT STYLES*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 /*body { padding-top: 64px; }*/
 
@@ -374,7 +375,7 @@ textarea {
 
 /*SIXTH SECTION: Our approach text container*/
 .our-approach-container {
-    background-color:#e4e4e4;
+    background-color:#fff;
     -webkit-border-radius: 10px/9px 9px 10px 10px;
 	-moz-border-radius: 10px/9px 9px 10px 10px;
 	border-radius: 10px/9px 9px 10px 10px;
@@ -631,9 +632,174 @@ textarea {
     background-repeat: repeat-x;
     background-position: bottom;
 }
-/* ------------ Index miscelaneous styles */
+/* ------------ Capabilities miscelaneous styles */
 
+.founder-img {
+    height:170px;
+    margin-top:-25px;
+    margin-bottom:-25px;
+}
 
+.team-member {
+    background-color:#0CBCC3;
+    display: block;
+}
+
+#Adrian {
+    background-image: url(img/profiles/black-white/Adrian.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Adrian:hover,
+#Adrian.selectedProfile {
+    background-image: url(img/profiles/color/Adrian.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Alfredo {
+    background-image: url(img/profiles/black-white/Alfredo2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Alfredo:hover,
+#Alfredo.selectedProfile {
+    background-image: url(img/profiles/color/Alfredo2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Anakaren {
+    background-image: url(img/profiles/black-white/AnaKaren2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Anakaren:hover,
+#Anakaren.selectedProfile {
+    background-image: url(img/profiles/color/AnaKaren2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Carlos {
+    background-image: url(img/profiles/black-white/Carlos2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Carlos:hover,
+#Carlos.selectedProfile {
+    background-image: url(img/profiles/color/Carlos2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Erick {
+    background-image: url(img/profiles/black-white/Erick2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Erick:hover,
+#Erick.selectedProfile {
+    background-image: url(img/profiles/color/Erick2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Hector {
+    background-image: url(img/profiles/black-white/Hector.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Hector:hover,
+#Hector.selectedProfile {
+    background-image: url(img/profiles/color/Hector.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Jorge {
+    background-image: url(img/profiles/black-white/Jorge.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Jorge:hover,
+#Jorge.selectedProfile {
+    background-image: url(img/profiles/color/Jorge.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Laura {
+    background-image: url(img/profiles/black-white/Laura.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Laura:hover,
+#Laura.selectedProfile {
+    background-image: url(img/profiles/color/Laura.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Mario {
+    background-image: url(img/profiles/black-white/Mario.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Mario:hover,
+#Mario.selectedProfile {
+    background-image: url(img/profiles/color/Mario.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Misael {
+    background-image: url(img/profiles/black-white/Misael.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Misael:hover,
+#Misael.selectedProfile {
+    background-image: url(img/profiles/color/Misael.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Orlando {
+    background-image: url(img/profiles/black-white/Orlando2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Orlando:hover,
+#Orlando.selectedProfile {
+    background-image: url(img/profiles/color/Orlando2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Pepe {
+    background-image: url(img/profiles/black-white/Pepe2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+#Pepe:hover,
+#Pepe.selectedProfile {
+    background-image: url(img/profiles/color/Pepe2.jpg);
+    background-size:cover;
+    background-position: center center;
+}
 /* ------------ GoodIT miscelaneous styles */
 #video-container {
     height:300px;

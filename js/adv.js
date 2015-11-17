@@ -14,6 +14,18 @@ $('#next-slide').on('click', function () {
    $("#myCarousel").carousel('next');
 });
 
+$('#talentCarousel').carousel({
+    interval: 5000
+});
+
+$('#prev-slide-talent').on('click', function () {
+   $("#talentCarousel").carousel('prev');
+});
+
+$('#next-slide-talent').on('click', function () {
+   $("#talentCarousel").carousel('next');
+});
+
 //Click Out Approack first block for first info slide
 $('#slide-button-0').on('click', function () {
     "use strict";
@@ -493,10 +505,14 @@ function caseStudiesExtraInfo() {
 }
 
 //---------------------- Our Capabilities Section
-$("#des-text").hide();
-$("#qa-text").hide();
-$("#sys-text").hide();
-$("#proj-text").hide();
+//Team
+function square() {
+  var width = $(".square").width();
+  $('.square').css('height', width);
+}
+//function swap(newImg){
+//  this.src = newImg;
+//}
 
 $(window).scroll(function () {
     if ($(this).scrollTop()) {
@@ -516,10 +532,12 @@ $(document).ready(function () {
     caseStudiesExtraInfo();
     engagementModelsDescriptions();
     displayMaps();
+    square();
 });
 
 $(window).resize(function () {
     "use strict";
 
     deviceHeight();
+    square();
 });
