@@ -129,7 +129,7 @@ ul.nav a:active,
 ul.nav a:hover,
 #contact-btn:hover,
 .menu-selected {
-    color:#000;
+    color:#000 !important;
     background-color: #fff;
 }
 
@@ -201,6 +201,24 @@ textarea {
 	background-image: -o-linear-gradient(top, #961c1f, rgba(150,28,31,0));
 	background-image: -ms-linear-gradient(top, #961c1f, rgba(150,28,31,0));
 	background-image: linear-gradient(to bottom, #961c1f, rgba(150,28,31,0));
+}
+
+.dark-red-to-white-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#961c1f+0,ff1744+45,ffffff+100 */
+    background: #961c1f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #961c1f 0%, #ff1744 45%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #961c1f 0%,#ff1744 45%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #961c1f 0%,#ff1744 45%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#961c1f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.white-to-dark-red-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ff1744+50,961c1f+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ff1744 50%, #961c1f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ff1744 50%,#961c1f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#ff1744 50%,#961c1f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#961c1f',GradientType=0 ); /* IE6-9 */
 }
 
 /* ------------- Solid Background-colors */
@@ -359,7 +377,7 @@ textarea {
 .closed-approach {
     background-color:#c71f26;
     color:#fff;
-    padding:15px 15px 50px 15px;
+    padding:15px 15px 15px 15px;
 }
 
 .opened-approach {
@@ -812,4 +830,17 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/*WATER CAROUSEL FOR GOOD IT*/
+.water-carousel {
+    width:100%;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+.water-carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+    width:40%;
 }
