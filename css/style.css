@@ -52,7 +52,7 @@ html,body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color:#000;
+    color:#3c3f46;
     overflow-x: hidden;
 }
 
@@ -74,11 +74,11 @@ p  { font-size: 0.938em; }
 }
 
 .text-yellow {
-    color:#f1c40d;
+    color:#f2c40a;
 }
 
 .text-red {
-    color:#c71f26;
+    color:#c61f27;
 }
 
 .text-serif {
@@ -223,11 +223,11 @@ textarea {
 
 /* ------------- Solid Background-colors */
 .background-red {
-    background-color:#c71f26;
+    background-color:#c61f27;
 }
 
 .background-yellow {
-    background-color:#f1c40d;
+    background-color:#f2c40a;
 }
 
 .background-black {
@@ -235,7 +235,7 @@ textarea {
 }
 
 .background-teal {
-    background-color: #0cbcc3;
+    background-color: #0DD8D4;
 }
 
 .background-white {
@@ -269,12 +269,6 @@ textarea {
     background-image: url(img/red-bells.jpg);
     background-size:cover;
     background-position: center top;
-}
-
-#light-orange-dots {
-    background-image: url(img/orange-dots.png);
-    background-repeat: repeat-x;
-    background-position: bottom;
 }
 
 #dark-orange-dots {
@@ -313,18 +307,6 @@ textarea {
     background-image: url(img/timeline-bg.jpg);
     background-size: cover;
     background-position: top center;
-}
-
-.top-dots {
-    display: block;
-    margin-top: -130px;
-    height:130px;
-}
-
-.bottom-dots {
-    display: block;
-    margin-bottom: -130px;
-    height:130px;
 }
 
 /* ------------ Img backgrounds (GoodIT) */
@@ -404,7 +386,7 @@ textarea {
 .engagement-model-btn {
     display:block;
     border: solid 1px #fff;
-    color:#000;
+    color:#3c3f46;
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
     padding-top:10px;
@@ -416,9 +398,9 @@ textarea {
 .engagement-model-btn:visited,
 .engagement-model-btn-selected {
     display:block;
-    border: solid 1px #000;
+    border: solid 1px #3c3f46;
     color:#fff !important;
-    background-color: #000;
+    background-color: #3c3f46;
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
     padding-top:10px;
@@ -437,7 +419,7 @@ textarea {
 
 /*SEVENTH SECTION: Outsourcing button style*/
 .outsourcing-btn {
-    color:#000;
+    color:#3c3f46;
     font-family: 'Open Sans', sans-serif;
     font-weight:600;
     display: block;
@@ -449,7 +431,7 @@ textarea {
 .outsourcing-btn:active,
 .outsourcing-btn:visited {
     text-decoration: underline;
-    color:#000;
+    color:#3c3f46;
 }
 
 .out-selected {
@@ -480,7 +462,7 @@ textarea {
 
 /*EIGTH SECTION: Style for the "Project" and "Result" Buttons*/ 
 .case-studies-extra-info {
-    color:#0cbcc3 !important;
+    color:#0DD8D4 !important;
     text-decoration: none !important;
     background-image: url(img/plus-unselected.png);
     background-size: contain;
@@ -494,7 +476,7 @@ textarea {
 .case-studies-extra-info:visited,
 .case-studies-extra-info:active,
 .case-studies-extra-info-selected {
-    color:#0cbcc3 !important;
+    color:#0DD8D4 !important;
     text-decoration: none !important;
     background-image: url(img/plus-selected.png);
     background-size: contain;
@@ -508,7 +490,7 @@ textarea {
     height: 0;
     border-style: solid;
     border-width: 0 25px 25px 25px;
-    border-color: transparent transparent #0cbcc3 transparent;
+    border-color: transparent transparent #0DD8D4 transparent;
     display: block;
     margin: auto;
 }
@@ -586,14 +568,6 @@ textarea {
 
 .percentages {
     margin-top:-120px;
-}
-
-.yellow-fill{
-    background-color:#E4A022;
-}
-
-.teal-fill{
-    background-color:#0cabb1;
 }
 
 .sunflowers-bg {
